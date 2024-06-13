@@ -9,11 +9,17 @@ body {
 }
 
 .container {
-    text-align: center;
+    display: flex;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.note-section {
+    text-align: center;
+    flex: 1;
+    margin-right: 20px;
 }
 
 textarea {
@@ -40,4 +46,29 @@ textarea#note {
     color: transparent;
     text-shadow: 0 0 0 white;
     resize: none;
+}
+
+.image-section {
+    display: flex;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
