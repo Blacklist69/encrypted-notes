@@ -8,12 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>Bloc de Notas Encriptado</h1>
-        <textarea id="note" placeholder="Escribe tu nota aquí CHAVILLO ILLOLDI jaja..." autofocus></textarea>
-        <h2>Texto Encriptado</h2>
-        <textarea id="encryptedNote" readonly></textarea>
-        <h2>Texto Desencriptado</h2>
-        <textarea id="decryptedNote" readonly></textarea>
+        <div class="note-section">
+            <h1>Bloc de Notas Encriptado</h1>
+            <textarea id="note" placeholder="Escribe tu nota aquí..." autofocus></textarea>
+            <h2>Texto Encriptado</h2>
+            <textarea id="encryptedNote" readonly></textarea>
+            <button id="toggleDecrypted">Mostrar Texto Desencriptado</button>
+            <div id="decryptedSection" style="display: none;">
+                <h2>Texto Desencriptado</h2>
+                <textarea id="decryptedNote" readonly></textarea>
+            </div>
+        </div>
+
     </div>
     <script src="script.js"></script>
 </body>
