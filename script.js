@@ -87,5 +87,3 @@ document.addEventListener('DOMContentLoaded', () => {
         return bytes.buffer;
     }
 });
-
-
