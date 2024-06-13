@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const noteTextarea = document.getElementById('note');
     const encryptedTextarea = document.getElementById('encryptedNote');
     const decryptedTextarea = document.getElementById('decryptedNote');
+    const toggleDecryptedButton = document.getElementById('toggleDecrypted');
+    const decryptedSection = document.getElementById('decryptedSection');
 
     let key, iv;
 
@@ -28,6 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             encryptedTextarea.value = '';
             decryptedTextarea.value = '';
+        }
+    });
+
+    toggleDecryptedButton.addEventListener('click', () => {
+        if (decryptedSection.style.display === 'none') {
+            decryptedSection.style.display = 'block';
+            toggleDecryptedButton.textContent = 'Ocultar Texto Desencriptado';
+        } else {
+            decryptedSection.style.display = 'none';
+            toggleDecryptedButton.textContent = 'Mostrar Texto Desencriptado';
         }
     });
 
@@ -75,3 +87,5 @@ document.addEventListener('DOMContentLoaded', () => {
         return bytes.buffer;
     }
 });
+
+
