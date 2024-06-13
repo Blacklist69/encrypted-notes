@@ -44,7 +44,7 @@ textarea#note {
     padding: 10px;
     border-radius: 5px;
     color: transparent;
-    text-shadow: 0 0 0 black;
+    text-shadow: 0 0 0 white;
     resize: none;
 }
 
