@@ -10,16 +10,29 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 50px;
+    margin-right: 10px;
 }
 
 .note-section {
     text-align: center;
-    flex: 1;
-    margin-right: 20px;
+    width: 100%;
 }
 
 textarea {
@@ -46,16 +59,6 @@ textarea#note {
     color: transparent;
     text-shadow: 0 0 0 white;
     resize: none;
-}
-
-.image-section {
-    display: flex;
-    align-items: center;
-}
-
-.image-section img {
-    max-width: 200px;
-    border-radius: 10px;
 }
 
 button {
